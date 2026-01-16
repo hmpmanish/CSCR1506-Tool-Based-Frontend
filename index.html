@@ -1,37 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSCR1506 - Tool Based Frontend Engineering</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoveOn Buddy | Anonymous Relationship Support</title>
+  <style>
+    :root {
+      --primary: #2575fc;
+      --secondary: #6a11cb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--light);
+      color: #334155;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+    }
+
+    header p {
+      margin-top: 20px;
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.25rem;
+      margin-bottom: 50px;
+      color: var(--dark);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .card.featured {
+      border: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      padding: 5px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin: 20px 0;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .features li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .features li::before {
+      content: "✓";
+      color: #10b981;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    .btn {
+      margin-top: auto;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 16px 30px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+    }
+
+    .anonymous-note {
+      background: #f1f5f9;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #94a3b8;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .confidential-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      padding: 5px 15px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Tool Based Frontend Engineering</h1>
-    <h2>Course Code: CSCR1506</h2>
+  <header>
+    <h1>MoveOn Buddy</h1>
+    <p>Ending a relationship is heavy. We help you find the right words and the strength to move forward with dignity.</p>
+    <div class="confidential-tag">🔒 100% Anonymous & Private</div>
+  </header>
 
-    <p>
-        This page is created for practical work of 
-        <strong>CSCR1506 – Tool Based Frontend Engineering</strong>.
+  <div class="section">
+    <h2>Our Support Plans</h2>
+    <div class="pricing-grid">
+      
+      <div class="card">
+        <h3>Starter Plan</h3>
+        <p>Best for drafting closure messages</p>
+        <div class="price">₹199</div>
+        <ul class="features">
+          <li>Custom Message Drafting</li>
+          <li>Situation Assessment</li>
+          <li>Email/Chat Support</li>
+          <li>Quick Guidance</li>
+        </ul>
+        <a href="https://topmate.io/moveonbuddy" target="_blank" class="btn">Get Started</a>
+      </div>
+
+      <div class="card featured">
+        <div class="badge">MOST POPULAR</div>
+        <h3>Guided Session</h3>
+        <p>1-on-1 Personalized Coaching</p>
+        <div class="price">₹499</div>
+        <ul class="features">
+          <li>30-Min Private Call</li>
+          <li>Closure Strategy</li>
+          <li>Boundary Setting</li>
+          <li>Live Draft Practice</li>
+        </ul>
+        <a href="https://topmate.io/moveonbuddy" target="_blank" class="btn">Book Session</a>
+      </div>
+
+      <div class="card">
+        <h3>Complete Plan</h3>
+        <p>Comprehensive exit & healing</p>
+        <div class="price">₹999</div>
+        <ul class="features">
+          <li>60-Min Strategy Call</li>
+          <li>7-Day Priority Access</li>
+          <li>Toxic Relationship Exit Plan</li>
+          <li>Healing Roadmap</li>
+        </ul>
+        <a href="https://topmate.io/moveonbuddy" target="_blank" class="btn">Join Now</a>
+      </div>
+
+    </div>
+
+    <div class="anonymous-note">
+      <h3>🛡️ Your Identity is Safe</h3>
+      <p>Humari priority aapki privacy hai. Sessions puri tarah confidential hote hain aur aapka data kisi ke saath share nahi kiya jata. You decide how much you want to share.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 MoveOn Buddy | Dedicated to Respectful Closures</p>
+    <p style="font-size: 0.75rem; margin-top: 20px;">
+      Disclaimer: We are professional guides, not licensed clinical therapists. If you are in physical danger or need legal help, please contact emergency services.
     </p>
-
-    <hr>
-
-    <h3>Student Details</h3>
-    <ul>
-        <li><strong>Name:</strong> Manish Pandey</li>
-        <li><strong>Batch:</strong> 2025–2029</li>
-        <li><strong>Program:</strong> B.Tech</li>
-        <li><strong>Branch:</strong> CSE</li>
-    </ul>
-
-    <p>
-        This repository will include HTML, CSS and ReactJS practical files.
-    </p>
-
-    <footer>
-        <p>© 2026 | CSCR1506 Frontend Practicals</p>
-    </footer>
+  </footer>
 
 </body>
 </html>
