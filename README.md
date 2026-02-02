@@ -2,24 +2,33 @@
 
 This repository contains basic frontend practice work created as part of the **CSCR1506 – Tool Based Frontend** course.
 
+---
+
 ## 📂 Project Overview
 
-- This project is made using **HTML**
+- This project is created using **HTML**
 - It demonstrates the use of basic HTML tags
-- Created for learning and academic purposes
+- Made for learning and academic practice
+
+---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- VS Code
-- Git & GitHub
+- HTML5  
+- VS Code  
+- Git & GitHub  
+
+---
 
 ## 📄 HTML Tags Used
 
-- `<html>` – Root element of HTML page  
+### Basic Structure Tags
+- `<html>` – Root element of the HTML page  
 - `<head>` – Contains metadata  
 - `<title>` – Page title  
 - `<body>` – Main visible content  
+
+---
 
 ### Text Formatting Tags
 - `<h1>` to `<h6>` – Headings  
@@ -32,23 +41,43 @@ This repository contains basic frontend practice work created as part of the **C
 - `<mark>` – Highlighted text  
 - `<pre>` – Preformatted text  
 
+---
+
+### List Tags
+- `<ol>` – Ordered list  
+- `<ul>` – Unordered list  
+- `<li>` – List item  
+
+#### Description List
+- `<dl>` – Description list  
+- `<dt>` – Description term  
+- `<dd>` – Description detail  
+
+---
+
 ### Media
 - `<img>` – Image display  
 
+---
+
 ## 🚀 How to Run the Project
 
-1. Download or clone the repository  
-2. Open the folder in **VS Code**
-3. Open the `.html` file
+1. Clone or download the repository  
+2. Open the folder in **VS Code**  
+3. Open the `.html` file  
 4. Right-click → **Open with Live Server**  
-   or  
-   Open directly in browser
+   **OR**  
+   Open directly in a web browser  
+
+---
 
 ## 👨‍💻 Author
 
 **Manish Pandey**  
-GitHub: https://github.com/hmpmanish
+GitHub: https://github.com/hmpmanish  
+
+---
 
 ## 📌 Note
 
-This project is for learning and practice purposes only.
+This project is created for learning and practice purposes only.
