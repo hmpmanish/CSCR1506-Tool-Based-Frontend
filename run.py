@@ -20,4 +20,4 @@ while True:
     else:
         print("No changes to push.")
     
-    time.sleep(10)
+    time.sleep(30)
