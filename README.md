@@ -1,83 +1,45 @@
-# CSCR1506 – Tool Based Frontend
-
-This repository contains basic frontend practice work created as part of the **CSCR1506 – Tool Based Frontend** course.
 
 ---
 
-## 📂 Project Overview
+## ▶️ How to Run the Project
 
-- This project is created using **HTML**
-- It demonstrates the use of basic HTML tags
-- Made for learning and academic practice
+### Method 1: Browser
+- Open `index.html` in any web browser
 
----
-
-## 🛠️ Technologies Used
-
-- HTML5  
-- VS Code  
-- Git & GitHub  
+### Method 2: VS Code
+- Open folder in VS Code
+- Use **Live Server** extension
 
 ---
 
-## 📄 HTML Tags Used
+## 🌍 GitHub Pages Hosting
 
-### Basic Structure Tags
-- `<html>` – Root element of the HTML page  
-- `<head>` – Contains metadata  
-- `<title>` – Page title  
-- `<body>` – Main visible content  
-
----
-
-### Text Formatting Tags
-- `<h1>` to `<h6>` – Headings  
-- `<p>` – Paragraph  
-- `<br>` – Line break  
-- `<b>` – Bold text  
-- `<strong>` – Important text  
-- `<i>` – Italic text  
-- `<em>` – Emphasized text  
-- `<mark>` – Highlighted text  
-- `<pre>` – Preformatted text  
+Steps to host website:
+1. Upload files to GitHub repository
+2. Go to **Settings → Pages**
+3. Select:
+   - Branch: `main`
+   - Folder: `/root`
+4. Save and open the generated URL
 
 ---
 
-### List Tags
-- `<ol>` – Ordered list  
-- `<ul>` – Unordered list  
-- `<li>` – List item  
+## 👤 Author Information
 
-#### Description List
-- `<dl>` – Description list  
-- `<dt>` – Description term  
-- `<dd>` – Description detail  
+**Name:** Manish Pandey  
+**GitHub:** https://github.com/hmpmanish  
 
 ---
 
-### Media
-- `<img>` – Image display  
+## 🎯 Purpose of Project
+
+- Learn HTML basics
+- Practice GitHub hosting
+- College / practical submission
+- Beginner-friendly web project
 
 ---
 
-## 🚀 How to Run the Project
+## 📄 License
 
-1. Clone or download the repository  
-2. Open the folder in **VS Code**  
-3. Open the `.html` file  
-4. Right-click → **Open with Live Server**  
-   **OR**  
-   Open directly in a web browser  
-
----
-
-## 👨‍💻 Author
-
-**Manish Pandey**  
-GitHub: https://github.com/hmpmanish  
-
----
-
-## 📌 Note
-
-This project is created for learning and practice purposes only.
+This project is created for **educational purposes only**.
