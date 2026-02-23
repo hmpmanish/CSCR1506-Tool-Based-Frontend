@@ -1,55 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors Example</title>
-    <style>
-        /* Element Selector */
-        h1  , p{
-            color: blue;
+<html>
+    <head>
+        <title>
+            Aditya Mishra
+        </title>
+        <!--Internal CSS-->
+        <style>
+            h1{
+                color:red;
+            }
+            #a{
+                color:blue;
+                text-align:center;
+            }
+            .b{
+                color:green;
+            }
+            *{
+                font-family: monospace;
+            padding:10px;
+            }
+        h2,h3,h4{
+            color:pink;
         }
-
-         h2  {
-            color: violet;
+        ul li{
+            color:green;
+            background-color: beige;
+            font-family:Georgia, 'Times New Roman', Times, serif
         }
-        .hmp {
-            color: red;
-            font-size: 30px;
-        }
-
-        #manish {
-            color: green;
-            text-align: center;
-        }
-
-        .p {
-    margin: 20px;
-}
-    </style>
-</head>
-<body>
-    <h1>Element Selector Example</h1>
-    <h1 class="hmp">Class Selector Example</h1>
-    <h1 id="manish">ID Selector Example</h1>
-
-
-
-     <h2>HTML Tags</h2>
-    <p>HTML tags are the building blocks of a webpage.</p>
-    <p><strong>&lt;h1&gt; Heading Tag &lt;/h1&gt;</strong> - Header Tag</p>
-    <p><strong>&lt;p&gt;This is a paragraph.&lt;/p&gt;</strong> - Paragraph Tag</p>
-
-    <h2>Paragraph Tags</h2>
-    <p>Use the &lt;p&gt; tag to add paragraphs to your content.</p>
-    <p>This is a paragraph.</p>
-
-    <h2>Lists in HTML</h2>
-    <p>Learn how to create lists in HTML:</p>
+        </style>
+    </head>
+    <body>
+        <h1>
+            Hello
+        </h1>
+        <h1 id="a">
+            Hello
+        </h1>
+        <h1 class="b">
+            Hello
+        </h1>
+        <h2>
+            Hello
+        </h2>
+        <h3>
+            Hello
+        </h3>
+        <h4>
+            Hello
+        </h4>
+        <h5>
+            Hello
+        </h5>
+        <h6>
+            Hello
+        </h6>
+        <!--HEADING TAGS DONE-->
+       <p>
+            This is a paragraph       tag and it
+             need <br>closing as it is a paired tag.
+            Also it does <hr>not reads spaces more than 1 space 
+            and new line characters.
+        </p>
+        <pre>
+ This is a pre formatted text       tag and it
+ need closing as it is a paired tag.
+Also it does not reads spaces more than 1 space 
+and new line characters.
+        </pre>
+        <b>
+            <i>
+                <u>
+                    
+                    Aditya Mishra
+                    
+                </u>
+            </i>
+        </b>
+        <mark>Hi What's up i am a highlighter text tag., also under paired ones</mark>
+        <span>
+         <a href="https://www.google.com" target="_blank"> <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image"></a>
+       
+         <mark>Hi What's up i am a highlighter text tag., also under paired ones</mark>
+         <div>
+            <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image">
+          </div>
+          <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image">
+         <!--Ordered List-->
+         <ol type="I">
+            <li>
+                First Item
+            </li>
+            <ol>
+                <li>Nested First item</li>
+            </ol>
+            <li>
+                Second Item
+            </li>
+            <ol>
+                <li>Nested Second item</li>
+            </ol>
+            <li>
+                Third Item
+            </li>
+             <ol>
+                <li>Nested Third item</li>
+            </ol>
+         </ol> </span>
+         <ul>
+<li>First Item</li>
+<li>Second ITem </li>
+<li>Third Item</li>
+         </ul>  
+         <dl>
+            <dt>Google <dt> SEO </dt></dt>
+            <dd> It is very famous search engine.<dd>Nested</dd></dd>
+            <dd>Nested2</dd>
+         </dl>  
+<form>
+    <label for="username"> Username :  </label>
+    <input type="text" name="user" id="username" placeholder="Enter username"> <br><br>
+    <label for="password"> Password :  </label>
+    <input type="password" name="pass" id="password" placeholder="Enter password"> <br><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female <br><br>
+    <input type="submit" value="Login">
+</form>
+        </body>
     
-
-
-    <h2>5484</h2>
-</body>
-
 </html>
