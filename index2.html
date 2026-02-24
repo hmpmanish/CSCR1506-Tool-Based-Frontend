@@ -3,43 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>manish pandey</title>
+    
     <style>
-        /* Universal Selector */
+        /* Universal Selector: Applies to every single element on the page */
         * {
             font-family: monospace;
             padding: 10px;
-            box-sizing: border-box; /* Prevents padding from breaking layout */
+            box-sizing: border-box; /* Ensures padding doesn't increase element width */
         }
 
+        /* Tag Selector: Sets all <h1> text to red */
         h1 { color: red; }
         
+        /* ID Selector: Targets the specific element with id="a" (Highest priority) */
         #a {
             color: blue;
             text-align: center;
         }
 
+        /* Class Selector: Targets elements with class="b" */
         .b { color: green; }
 
+        /* Grouped Selector: Colors h2, h3, and h4 pink at once */
         h2, h3, h4 { color: pink; }
 
+        /* Descendant Selector: Targets <li> only if it is inside a <ul> */
         ul li {
             color: green;
             background-color: beige;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        /* Interactivity */
+        /* Pseudo-class: Changes color when the mouse glides over an <h1> */
         h1:hover {
             color: orange;
             text-decoration: underline;
         }
 
-        /* Pseudo-elements */
+        /* Pseudo-element: Styles only the first letter of a paragraph */
         p::first-letter {
             font-size: xx-large;
             color: red;
         }
 
+        /* Pseudo-element: Injects text content after every <h1> */
         h1::after {
             content: " - This is heading 1 AFTER";
             font-size: small;
@@ -47,26 +54,23 @@
     </style>
 </head>
 <body>
+    
     <div>
-        <h1 id="a">Hello</h1> 
-        <h1 class="b">Hello</h1>
-        <h2>Hello</h2>
+        <h1 id="a">Hello</h1> <h1 class="b">Hello</h1> <h2>Hello</h2>
         <h3>Hello</h3>
         <h4>Hello</h4>
         <h5>Hello (No specific color assigned)</h5>
     </div>
 
-    <hr>
-
-    <p>
+    <hr> <p>
         This is a paragraph tag. It handles text flow and ignores 
         multiple spaces. <br> Use the BR tag for a manual break.
     </p>
 
     <pre>
-This is pre-formatted.
-    It preserves    spaces 
-and line breaks exactly as typed.
+    This is pre-formatted.
+        It preserves     spaces 
+    and line breaks exactly as typed.
     </pre>
 
     <p><b><i><u>MANISH PANDEY</u></i></b></p>
@@ -75,19 +79,21 @@ and line breaks exactly as typed.
         <label for="username">Username:</label>
         <input type="text" name="user" id="username" placeholder="Enter username"> 
         <br><br>
+        
         <label for="password">Password:</label>
         <input type="password" name="pass" id="password" placeholder="Enter password"> 
         <br><br>
+        
         <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label> 
         <br><br>
+        
         <input type="submit" value="Login">
     </form>
 
     <ol type="I">
         <li>First Item
-            <ol>
-                <li>Nested First item</li>
+            <ol> <li>Nested First item</li>
             </ol>
         </li>
         <li>Second Item</li>
