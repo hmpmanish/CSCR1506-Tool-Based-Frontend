@@ -1,137 +1,103 @@
-<html>
-    <head>
-        <title>
-            Aditya Mishra
-        </title>
-        <!--Internal CSS-->
-        <style>
-            h1{
-                color:red;
-            }
-            #a{
-                color:blue;
-                text-align:center;
-            }
-            .b{
-                color:green;
-            }
-            *{
-                font-family: monospace;
-            padding:10px;
-            }
-        h2,h3,h4{
-            color:pink;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manish pandey</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: monospace;
+            padding: 10px;
+            box-sizing: border-box; /* Prevents padding from breaking layout */
         }
-        ul li{
-            color:green;
+
+        h1 { color: red; }
+        
+        #a {
+            color: blue;
+            text-align: center;
+        }
+
+        .b { color: green; }
+
+        h2, h3, h4 { color: pink; }
+
+        ul li {
+            color: green;
             background-color: beige;
-            font-family:Georgia, 'Times New Roman', Times, serif
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
-        h1:hover{
-            color:orange;
+
+        /* Interactivity */
+        h1:hover {
+            color: orange;
             text-decoration: underline;
         }
-p::first-letter{font-size: xx-large; color: red;}
-h1::after{
-    content: "This is heading 1 AFTER";
-}
-        </style>
-    </head>
-    <body>
-        <div>
-        <h1 id="a">
-            Hello
-        </h1>
-        <h1 class="b">
-            Hello
-        </h1>
-        <h2>
-            Hello
-        </h2>
-        <h3>
-            Hello
-        </h3>
-        <h4>
-            Hello
-        </h4>
-        <h5>
-            Hello
-        </h5>
-        <h6>
-            Hello
-        </h6>
-        </div>
-        <!--HEADING TAGS DONE-->
-       <p>
-            This is a paragraph       tag and it
-             need <br>closing as it is a paired tag.
-            Also it does <hr>not reads spaces more than 1 space 
-            and new line characters.
-        </p>
-        <pre>
- This is a pre formatted text       tag and it
- need closing as it is a paired tag.
-Also it does not reads spaces more than 1 space 
-and new line characters.
-        </pre>
-        <b>
-            <i>
-                <u>
-                    
-                    Aditya Mishra
-                    
-                </u>
-            </i>
-        </b>
-        <mark>Hi What's up i am a highlighter text tag., also under paired ones</mark>
-        <span>
-         <a href="https://www.google.com" target="_blank"> <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image"></a>
-       
-         <mark>Hi What's up i am a highlighter text tag., also under paired ones</mark>
-         
-            <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image">
-          
-          <img src="https://ds-prod.citroen.in/static-assets/ds-static/s3fs-public/2025-08/C3_X_HP_section_640x1120.jpg?gaw_sY7squ.6L52gCTPirZ9kyC9VqYeY" width="400" height="400" alt="CAR Image">
-         <!--Ordered List-->
-         <ol type="I">
-            <li>
-                First Item
-            </li>
+
+        /* Pseudo-elements */
+        p::first-letter {
+            font-size: xx-large;
+            color: red;
+        }
+
+        h1::after {
+            content: " - This is heading 1 AFTER";
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="a">Hello</h1> 
+        <h1 class="b">Hello</h1>
+        <h2>Hello</h2>
+        <h3>Hello</h3>
+        <h4>Hello</h4>
+        <h5>Hello (No specific color assigned)</h5>
+    </div>
+
+    <hr>
+
+    <p>
+        This is a paragraph tag. It handles text flow and ignores 
+        multiple spaces. <br> Use the BR tag for a manual break.
+    </p>
+
+    <pre>
+This is pre-formatted.
+    It preserves    spaces 
+and line breaks exactly as typed.
+    </pre>
+
+    <p><b><i><u>Aditya Mishra</u></i></b></p>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" name="user" id="username" placeholder="Enter username"> 
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="pass" id="password" placeholder="Enter password"> 
+        <br><br>
+        <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label> 
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <ol type="I">
+        <li>First Item
             <ol>
                 <li>Nested First item</li>
             </ol>
-            <li>
-                Second Item
-            </li>
-            <ol>
-                <li>Nested Second item</li>
-            </ol>
-            <li>
-                Third Item
-            </li>
-             <ol>
-                <li>Nested Third item</li>
-            </ol>
-         </ol> </span>
-         <ul>
-<li>First Item</li>
-<li>Second ITem </li>
-<li>Third Item</li>
-         </ul>  
-         <dl>
-            <dt>Google <dt> SEO </dt></dt>
-            <dd> It is very famous search engine.<dd>Nested</dd></dd>
-            <dd>Nested2</dd>
-         </dl>  
-<form>
-    <label for="username"> Username :  </label>
-    <input type="text" name="user" id="username" placeholder="Enter username"> <br><br>
-    <label for="password"> Password :  </label>
-    <input type="password" name="pass" id="password" placeholder="Enter password"> <br><br>
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female <br><br>
-    <input type="submit" value="Login">
-</form>
-        </body>
-    
+        </li>
+        <li>Second Item</li>
+    </ol>
+
+    <dl>
+        <dt>Google</dt>
+        <dd>It is a very famous search engine.</dd>
+        <dt>SEO</dt>
+        <dd>Search Engine Optimization.</dd>
+    </dl>
+</body>
 </html>
