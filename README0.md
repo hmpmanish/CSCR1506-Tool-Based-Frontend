@@ -44,4 +44,7 @@ Explanation:
 
 <body> → Visible content of the page
 
+    trasition 
+    somootly running any state change thus that is trassition 
+
 
